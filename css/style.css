@@ -1,0 +1,320 @@
+/* Our custom css codes */
+@font-face {
+    font-family: BKoodakBold;
+    src: url(../fonts/BKoodakBold.eot) format('eot'), url(../fonts/BKoodakBold.woff) format('woff'), url(../fonts/BKoodakBold.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: BYekan;
+    src: url(../fonts/BYekan.eot) format('eot'), url(../fonts/BYekan.woff) format('woff'), url(../fonts/BYekan.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'iss';
+    src: url('../fonts/iss.woff') format('woff'), url('../fonts/iss.eot') format('eot'), url('../fonts/iss.ttf') format('truetype');
+}
+
+body {
+    text-align: left;
+    direction: ltr;
+}
+
+*, input, textarea, select {
+    font-family: tahoma;
+    font-size: 13px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #777;
+}
+.clear{
+    clear: both;
+}
+.br5 {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+span.date {
+    font-size: 11px;
+    color: #ccc;
+    margin-right: 10px;
+}
+
+.error {
+    background-color: rgb(255, 226, 226);
+    padding: 7px 12px;
+    margin: 5px auto;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #DA9191;
+}
+.success {
+    background-color: rgb(233, 255, 215);
+    padding: 7px 12px;
+    margin: 5px auto;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #89da80;
+}
+.main {
+    border: 1px solid #7cc221;
+    border-radius: 5px;
+    margin: 30px;
+    background-color: #7cbc0a ;
+}
+.info {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+}
+.info a{
+    color: #c70000;
+}
+.info a:hover{
+    color: red;
+}
+.info .adminName{
+    margin-left: 20px;
+}
+.header, .footer {
+    background: #9dd53a;
+    background: -moz-linear-gradient(-45deg, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #9dd53a), color-stop(50%, #a1d54f), color-stop(51%, #80c217), color-stop(100%, #7cbc0a));
+    background: -webkit-linear-gradient(-45deg, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%);
+    background: linear-gradient(135deg, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%);
+    text-align: center;
+    color: #fff;
+}
+
+.header {
+    min-height: 60px;
+}
+.loginform{
+    width: 30%;
+    text-align: center;
+    margin: 40px auto;
+    line-height: 40px;
+}
+.loginform input{
+    width: 100%;
+}
+.searchform #s{
+    width: 200px;
+}
+.footer {
+}
+
+.header h1 {
+    font-family: BYekan;
+    font-size: 28px;
+    text-align: left;
+    margin: 0;
+    padding: 0 20px;
+    float: left;
+}
+
+.header form.searchform {
+    text-align: right;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.content {
+    background: #f5f5f5;
+}
+
+.question {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 7px;
+    padding: 7px 7px 10px 7px;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+}
+
+.question:hover {
+    background-color: #ebfae6;
+    border: 1px solid #10B323;
+}
+
+.question.pending {
+    background: #fff url("../images/pending.png") no-repeat 10px 7px;
+}
+
+.question.answered {
+    background: #fff url("../images/answered.png") no-repeat 14px 8px;
+}
+
+.question.publish {
+    background: #fff url("../images/publish.png") no-repeat 10px 8px;
+}
+.question img {
+    float: right;
+}
+.notfound{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    margin: 20px;
+}
+.question .qManage {
+    position: absolute;
+    right: 50px;
+    top: 11px;
+    background-color: rgb(177, 241, 165);
+    padding: 5px;
+    z-index: 99999;
+}
+
+.question .qm:hover,.question .qmr:hover {
+    color: #007cbd;
+}
+.question .result {
+    display: none;
+    margin-left: 20px;
+    color: #0B7DB2;
+}
+
+.question .q {
+    text-align: left;
+    font-size: 18px;
+    color: #10B323;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.question .q .i {
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #eb9b18;
+    font-size: 16px;
+    vertical-align: -2px;
+}
+
+.question .a {
+    padding: 5px 10px 7px 10px;
+    border-radius: 3px;
+    margin: 3px 30px;
+    background-color: #fafafa;
+    display: none;
+}
+
+.question .r {
+    display: none;
+}
+
+.question .replyForm{
+    width: 80%;
+    margin: 10px auto !important;
+}
+.question .replyForm textarea{
+    width: 100%;
+}
+.question .replyForm .submit{
+    float: left;
+    margin: 5px;
+}
+.sidebar {
+    background: #9dd53a;
+}
+
+.menu .menu-title {
+    font-family: BYekan;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu form input, .menu form textarea {
+    width: 100%;
+    margin: 3px auto;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px
+}
+
+.pagination a, .pagination strong {
+    background: #fff;
+    display: inline-block;
+    margin-right: 3px;
+    padding: 4px 12px;
+    text-decoration: none;
+    line-height: 1.5em;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.pagination a:hover {
+    background-color: #b1daaa;
+    color: #fff;
+}
+
+.pagination a:active {
+    background: rgba(190, 190, 190, 0.75);
+}
+
+.pagination strong {
+    color: #fff;
+    background-color: #BEBEBE;
+}
+
+.header .inner, .sidebar .inner, .content .inner, .footer .inner {
+    padding: 7px;
+    position: relative;
+}
+
+.rtl {
+    text-align: right;
+    direction: rtl;
+}
+
+.ltr {
+    text-align: left !important;
+    direction: ltr !important;
+}
+
+.pad5 {
+    padding: 5px !important;
+}
+
+.pad7 {
+    padding: 7px !important;
+}
+
+.button-green,
+.button-red,
+.button-orange,
+.button-blue {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-green {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-red {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-orange {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-blue {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
