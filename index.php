@@ -142,7 +142,7 @@
 
     <div class="pure-g">
         <div class="pure-u-1 footer">
-            <div class="inner">@2017, All Right reserved</div>
+            <div class="inner">@2018, All Right reserved</div>
         </div>
     </div>
 </div>
